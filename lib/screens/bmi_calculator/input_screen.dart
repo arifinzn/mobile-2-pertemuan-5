@@ -2,13 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:pertemuan5/utils/constants.dart';
+import 'package:pertemuan5/utils/calculator_brain.dart';
 import 'package:pertemuan5/components/icon_content.dart';
 import 'package:pertemuan5/components/reusable_bg.dart';
 import 'package:pertemuan5/components/round_icon_Button.dart';
-import 'package:pertemuan5/utils/constants.dart';
-import 'package:pertemuan5/screens/bmi_calculator/result_page.dart';
 import 'package:pertemuan5/components/bottom_container_button.dart';
-import 'package:pertemuan5/utils/calculator_brain.dart';
+import 'package:pertemuan5/screens/bmi_calculator/result_page.dart';
 
 // ignore: must_be_immutable
 class BMICalculatorInputScreen extends StatefulWidget {
@@ -111,9 +110,9 @@ class _BMICalculatorInputScreenState extends State<BMICalculatorInputScreen> {
                       thumbColor: const Color(0xFFEB1555),
                       overlayColor: const Color(0x29EB1555),
                       thumbShape:
-                          const RoundSliderThumbShape(enabledThumbRadius: 15.0),
+                          const RoundSliderThumbShape(enabledThumbRadius: 10.0),
                       overlayShape:
-                          const RoundSliderOverlayShape(overlayRadius: 35.0),
+                          const RoundSliderOverlayShape(overlayRadius: 25.0),
                     ),
                     child: Slider(
                       value: height.toDouble(),

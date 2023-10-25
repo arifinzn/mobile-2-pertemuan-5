@@ -51,7 +51,7 @@ class BMICalculatorResultPage extends StatelessWidget {
                     resultText,
                     style: TextStyle(
                       color: textColor,
-                      fontSize: 27.0,
+                      fontSize: 20.0,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -75,21 +75,21 @@ class BMICalculatorResultPage extends StatelessWidget {
                   const SizedBox(
                     height: 15.0,
                   ),
-                  RawMaterialButton(
-                    onPressed: () {},
-                    constraints: const BoxConstraints.tightFor(
-                      width: 200.0,
-                      height: 56.0,
-                    ),
-                    fillColor: const Color(0xFF4C4F5E),
-                    elevation: 0.0,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0)),
-                    child: const Text(
-                      'SIMPAN HASIL',
-                      style: kBodyTextStyle,
-                    ),
-                  ),
+                  // RawMaterialButton(
+                  //   onPressed: () {},
+                  //   constraints: const BoxConstraints.tightFor(
+                  //     width: 200.0,
+                  //     height: 56.0,
+                  //   ),
+                  //   fillColor: const Color(0xFF4C4F5E),
+                  //   elevation: 0.0,
+                  //   shape: RoundedRectangleBorder(
+                  //       borderRadius: BorderRadius.circular(10.0)),
+                  //   child: const Text(
+                  //     'SIMPAN HASIL',
+                  //     style: kBodyTextStyle,
+                  //   ),
+                  // ),
                 ],
               ),
             ),

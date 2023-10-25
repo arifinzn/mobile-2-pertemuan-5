@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 import 'package:pertemuan5/screens/bmi_calculator/input_screen.dart';
+import 'package:pertemuan5/screens/calculator/calculator_screen.dart';
+import 'package:pertemuan5/utils/constants.dart';
+import 'package:pertemuan5/components/reusable_bg.dart';
+import 'package:pertemuan5/components/icon_content.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +31,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: BMICalculatorInputScreen(),
+      home: const MyHomePage(title: 'Pemrograman Mobile 2 - Pertemuan 5'),
     );
   }
 }
@@ -172,21 +178,49 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             const SizedBox(height: 30),
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+            Row(
+              children: [
+                Expanded(
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CalculatorScreen(),
+                        ),
+                      );
+                    },
+                    child: ReusableBg(
+                      colour: kactiveCardColor,
+                      cardChild: IconContent(
+                          myicon: FontAwesomeIcons.calculator,
+                          text: 'Kalkulator'),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => BMICalculatorInputScreen(),
+                        ),
+                      );
+                    },
+                    child: ReusableBg(
+                      colour: kactiveCardColor,
+                      cardChild: IconContent(
+                          myicon: FontAwesomeIcons.weight,
+                          text: 'Kalkulator BMI'),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
