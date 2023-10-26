@@ -107,8 +107,8 @@ class _BMICalculatorInputScreenState extends State<BMICalculatorInputScreen> {
                     data: SliderTheme.of(context).copyWith(
                       activeTrackColor: Colors.white,
                       inactiveTrackColor: ksliderInactiveColor,
-                      thumbColor: const Color(0xFFEB1555),
-                      overlayColor: const Color(0x29EB1555),
+                      thumbColor: Colors.orange,
+                      overlayColor: Colors.orangeAccent,
                       thumbShape:
                           const RoundSliderThumbShape(enabledThumbRadius: 10.0),
                       overlayShape:

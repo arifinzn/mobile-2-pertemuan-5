@@ -15,7 +15,7 @@ class BottomContainer extends StatelessWidget {
         margin: EdgeInsets.only(top: 10.0),
         width: double.infinity,
         height: kbottomContainerHeight,
-        padding: EdgeInsets.only(bottom: 15.0),
+        padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
         child: Center(
           child: Text(
             text,

@@ -95,7 +95,7 @@ class BMICalculatorResultPage extends StatelessWidget {
             ),
           ),
           BottomContainer(
-              text: 'Kalkulasi Ulang',
+              text: 'Hitung Ulang',
               onTap: () {
                 Navigator.pop(context);
               }),

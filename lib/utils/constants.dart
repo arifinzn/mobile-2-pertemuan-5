@@ -4,7 +4,7 @@ const kactiveCardColor = Color.fromARGB(255, 208, 209, 209);
 const kinactiveCardColor = Color.fromARGB(255, 175, 175, 175);
 const ksliderInactiveColor = Color.fromARGB(255, 27, 28, 41);
 const kbottomContainerHeight = 50.0;
-const kbottomContainerColor = Color(0xFFEB1555);
+const kbottomContainerColor = Colors.orange;
 const klabelTextStyle = TextStyle(
   fontSize: 16.0,
   color: Color(0xFF8D8E98),

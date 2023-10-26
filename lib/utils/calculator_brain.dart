@@ -35,7 +35,7 @@ class Calculate {
 
   Color getTextColor() {
     if (_bmi >= 25 || _bmi <= 18.5) {
-      return Colors.deepOrangeAccent;
+      return Colors.orange;
     } else {
       return const Color(0xFF24D876);
     }

@@ -1,20 +1,20 @@
 class UserModel {
   final String id;
-  final String title;
-  final String language;
-  final int year;
+  final String name;
+  final String email;
+  final String password;
   UserModel({
     required this.id,
-    required this.title,
-    required this.language,
-    required this.year,
+    required this.name,
+    required this.email,
+    required this.password,
   });
   factory UserModel.fromJson(Map<String, dynamic> data) => UserModel(
         id: data['id'],
-        title: data['title'],
-        language: data['language'],
-        year: data['year'],
+        name: data['name'],
+        email: data['email'],
+        password: data['password'],
       );
   Map<String, dynamic> toMap() =>
-      {'id': id, 'title': title, 'language': language, 'year': year};
+      {'id': id, 'name': name, 'email': email, 'password': password};
 }
