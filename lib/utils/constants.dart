@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+const editTextBgColor = Color(0xFFF8F8F8);
+const textPrimaryColor = Color(0xFF2E3033);
+const iconColorPrimary = Color(0xFFFFFFFF);
+const iconColorSecondary = Color(0xFFA8ABAD);
 const kactiveCardColor = Color.fromARGB(255, 208, 209, 209);
 const kinactiveCardColor = Color.fromARGB(255, 175, 175, 175);
 const ksliderInactiveColor = Color.fromARGB(255, 27, 28, 41);

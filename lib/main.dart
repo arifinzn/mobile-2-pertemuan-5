@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 import 'package:pertemuan5/screens/bmi_calculator/input_screen.dart';
 import 'package:pertemuan5/screens/calculator/calculator_screen.dart';
@@ -177,47 +178,121 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
             ),
-            const SizedBox(height: 30),
-            Row(
+            const SizedBox(height: 20),
+            Column(
               children: [
-                Expanded(
-                  child: GestureDetector(
+                GestureDetector(
                     onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => CalculatorScreen(),
-                        ),
-                      );
+                      showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return Dialog(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0)),
+                              child: SizedBox(
+                                height: 200,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(12.0),
+                                  child: Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceEvenly,
+                                    children: [
+                                      TextButton(
+                                        style: TextButton.styleFrom(
+                                            backgroundColor: kactiveCardColor),
+                                        onPressed: () {
+                                          Fluttertoast.showToast(
+                                              msg: "Ini adalah Toast",
+                                              toastLength: Toast.LENGTH_SHORT,
+                                              gravity: ToastGravity.CENTER,
+                                              backgroundColor: Colors.green,
+                                              textColor: Colors.white,
+                                              fontSize: 18.0);
+                                        },
+                                        child: const Text(
+                                          "Toast",
+                                          style: klabelTextStyle,
+                                        ),
+                                      ),
+                                      TextButton(
+                                        style: TextButton.styleFrom(
+                                            backgroundColor: kactiveCardColor),
+                                        onPressed: () {
+                                          ScaffoldMessenger.of(context)
+                                              .showSnackBar(
+                                            const SnackBar(
+                                                content: Text(
+                                                    'Ini adalah SnackBar')),
+                                          );
+                                        },
+                                        child: Text(
+                                          "SnackBar",
+                                          style: klabelTextStyle,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            );
+                          });
                     },
-                    child: ReusableBg(
-                      colour: kactiveCardColor,
-                      cardChild: IconContent(
-                          myicon: FontAwesomeIcons.calculator,
-                          text: 'Kalkulator'),
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => BMICalculatorInputScreen(),
+                    child: Container(
+                      width: double.infinity,
+                      alignment: Alignment.center,
+                      margin: const EdgeInsets.all(16.0),
+                      padding: const EdgeInsets.all(10.0),
+                      decoration: BoxDecoration(
+                        color: kactiveCardColor,
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                      child: const Text("Materi"),
+                    )),
+                const SizedBox(height: 10),
+                Row(
+                  children: [
+                    Expanded(
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => CalculatorScreen(),
+                            ),
+                          );
+                        },
+                        child: ReusableBg(
+                          colour: kactiveCardColor,
+                          cardChild: IconContent(
+                              myicon: FontAwesomeIcons.calculator,
+                              text: 'Kalkulator'),
                         ),
-                      );
-                    },
-                    child: ReusableBg(
-                      colour: kactiveCardColor,
-                      cardChild: IconContent(
-                          myicon: FontAwesomeIcons.weight,
-                          text: 'Kalkulator BMI'),
+                      ),
                     ),
-                  ),
+                    Expanded(
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => BMICalculatorInputScreen(),
+                            ),
+                          );
+                        },
+                        child: ReusableBg(
+                          colour: kactiveCardColor,
+                          cardChild: IconContent(
+                              myicon: FontAwesomeIcons.weight,
+                              text: 'Kalkulator BMI'),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ],
-            ),
+            )
           ],
         ),
       ),

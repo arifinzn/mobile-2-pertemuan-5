@@ -34,6 +34,10 @@ flutter_lints
 2.19
 file:///Users/arifin_zn/.pub-cache/hosted/pub.dev/flutter_lints-2.0.3/
 file:///Users/arifin_zn/.pub-cache/hosted/pub.dev/flutter_lints-2.0.3/lib/
+fluttertoast
+2.12
+file:///Users/arifin_zn/.pub-cache/hosted/pub.dev/fluttertoast-8.2.2/
+file:///Users/arifin_zn/.pub-cache/hosted/pub.dev/fluttertoast-8.2.2/lib/
 font_awesome_flutter
 2.12
 file:///Users/arifin_zn/.pub-cache/hosted/pub.dev/font_awesome_flutter-9.2.0/
@@ -74,14 +78,6 @@ sprintf
 2.12
 file:///Users/arifin_zn/.pub-cache/hosted/pub.dev/sprintf-7.0.0/
 file:///Users/arifin_zn/.pub-cache/hosted/pub.dev/sprintf-7.0.0/lib/
-sqflite
-2.18
-file:///Users/arifin_zn/.pub-cache/hosted/pub.dev/sqflite-2.2.8+4/
-file:///Users/arifin_zn/.pub-cache/hosted/pub.dev/sqflite-2.2.8+4/lib/
-sqflite_common
-2.18
-file:///Users/arifin_zn/.pub-cache/hosted/pub.dev/sqflite_common-2.4.5+1/
-file:///Users/arifin_zn/.pub-cache/hosted/pub.dev/sqflite_common-2.4.5+1/lib/
 stack_trace
 2.18
 file:///Users/arifin_zn/.pub-cache/hosted/pub.dev/stack_trace-1.11.0/
@@ -94,10 +90,6 @@ string_scanner
 2.18
 file:///Users/arifin_zn/.pub-cache/hosted/pub.dev/string_scanner-1.2.0/
 file:///Users/arifin_zn/.pub-cache/hosted/pub.dev/string_scanner-1.2.0/lib/
-synchronized
-2.18
-file:///Users/arifin_zn/.pub-cache/hosted/pub.dev/synchronized-3.1.0/
-file:///Users/arifin_zn/.pub-cache/hosted/pub.dev/synchronized-3.1.0/lib/
 term_glyph
 2.12
 file:///Users/arifin_zn/.pub-cache/hosted/pub.dev/term_glyph-1.2.1/
@@ -134,4 +126,8 @@ flutter_test
 2.17
 file:///Users/arifin_zn/fvm/versions/3.7.5/packages/flutter_test/
 file:///Users/arifin_zn/fvm/versions/3.7.5/packages/flutter_test/lib/
+flutter_web_plugins
+2.17
+file:///Users/arifin_zn/fvm/versions/3.7.5/packages/flutter_web_plugins/
+file:///Users/arifin_zn/fvm/versions/3.7.5/packages/flutter_web_plugins/lib/
 2
